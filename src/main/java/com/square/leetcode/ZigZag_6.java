@@ -1,7 +1,6 @@
 package com.square.leetcode;
 
 import java.util.Arrays;
-import java.util.Optional;
 
 public class ZigZag_6 {
     public static String zigZag(String s, int numRows) {
