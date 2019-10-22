@@ -7,17 +7,17 @@ public class ZigZag_6 {
 
         char[] chars = s.toCharArray();
         int row = Math.min(numRows, chars.length);
+        if(row==1) return s;
         StringBuffer[] bufferArray = new StringBuffer[row];
         int nowRow = 0;
         //0 向下，1 向上
         int direction = 0;
-        for (int i = 0; i < chars.length; i++) {
+        for(char c : chars){
             if (bufferArray[nowRow] == null) {
                 bufferArray[nowRow] = new StringBuffer();
             }
             bufferArray[nowRow]
-                    .append(chars[i]);
-            if(row==1) continue;
+                    .append(c);
             //确定下一行
             if (nowRow == numRows - 1) {
                 direction = 1;
