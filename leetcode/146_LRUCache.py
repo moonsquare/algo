@@ -5,7 +5,8 @@ class DLinkedNode:
         self.next = None
         self.pre = None
 
-
+# 借助双向链表实现
+# 头尾，节点的操作
 class LRUCache:
 
     def __init__(self, capacity: int):
