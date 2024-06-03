@@ -26,6 +26,16 @@ class Solution:
         else:
             return pre_node
 
+    def reverseList2(self, head1: Optional[ListNode]) -> Optional[ListNode]:
+        pre = None
+        curr = head1
+        while curr:
+            next1 = curr.next
+            curr.next = pre
+            pre = curr
+            curr = next1
+        return pre
+
 
 head = [1, 2, 3, 4, 5]
 n = ListNode(head[0])
@@ -36,6 +46,7 @@ for i in range(1, len(head)):
     n = next
 s = Solution()
 n = s.reverseList(head_n)
+n1 = s.reverseList2(head_n)
 
 while n:
     print(n.val, " ")

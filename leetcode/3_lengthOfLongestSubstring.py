@@ -1,3 +1,5 @@
+
+# 滑动窗口
 def lengthOfLongestSubstring(s: str) -> int:
     result = 0
     if s and len(s) > 0:
