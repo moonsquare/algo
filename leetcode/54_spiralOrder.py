@@ -6,7 +6,7 @@ class Solution:
         ans = []
         if not matrix:
             return ans
-        while matrix and len(matrix) > 0:
+        while True:
             i = j = 0
             while j < len(matrix[i]):
                 ans.append(matrix[i][j])
@@ -38,7 +38,6 @@ class Solution:
                 i -= 1
             if not matrix or not matrix[0]:
                 return ans
-        return ans
 
 
 so = Solution()
